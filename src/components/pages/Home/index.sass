@@ -1,0 +1,34 @@
+html
+  max-width: 1400px
+  margin: auto
+body
+  margin: 0
+.logo-homepage
+  text-align: center
+  img
+    width: 1240px
+    height: 223px
+    object-fit: cover
+    border-radius: 20px
+    filter: brightness(70%)
+  article
+    height: 100%
+    position: relative
+    overflow: hidden
+  .homepage-text
+    font-family: Montserrat,sans-serif
+    font-size: 48px
+    font-weight: 500
+    line-height: 68px
+    color: white
+    text-align: center
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    height: fit-content
+    margin: auto
+@media screen and (max-width: 700px)
+  @import "../../Header/header-mobile"
+  @import "../../Footer/footer-mobile"

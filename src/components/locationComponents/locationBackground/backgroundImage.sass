@@ -1,0 +1,70 @@
+.carousel-container
+  width: 90%
+  height: 415px
+  position: relative
+  overflow: hidden
+  margin: 45px auto auto auto
+  border-radius: 20px
+
+
+.carousel-slide
+  display: flex
+  width: 100%
+  height: 100%
+  transition: transform 0.3s ease-in-out
+  position: relative
+  border-radius: 20px
+
+
+.carousel-slide-item
+  width: 100%
+  height: 100%
+  opacity: 0
+  position: absolute
+  top: 0
+  left: 0
+  transition: opacity 0.3s ease-in-out
+  img
+    object-fit: cover
+    width: 100%
+    height: 100%
+    border-radius: 20px
+
+  &.active
+    opacity: 1
+
+
+
+.carousel-arrow
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  background-color: transparent
+  cursor: pointer
+  transition: opacity 0.3s ease-in-out
+  img
+    height: 90px
+    color: black
+    filter: invert(100%)
+
+  &:hover
+    opacity: 1
+
+  &.right
+    right: 5px
+
+
+
+.carousel-counter
+  position: absolute
+  bottom: 10px
+  left: 50%
+  transform: translateX(-50%)
+  color: #fff
+  font-family: Montserrat, sans-serif
+  font-size: 18px
+  font-weight: 500
+  line-height: 26px
+  letter-spacing: 0
+
+

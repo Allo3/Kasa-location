@@ -1,0 +1,63 @@
+.grid-container
+  margin: 40px auto auto auto
+  width: 90%
+  background-color: #F6F6F6
+  border-radius: 20px
+
+.location-grid
+  padding-top: 40px
+  padding-left: 30px
+
+  padding-bottom: 40px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(2, 1fr)
+  grid-column-gap: 60px
+  grid-row-gap: 50px
+
+  img
+    width: 344px
+    height: 344px
+    border-radius: 20px
+    object-fit: cover
+
+
+.afficher-plus
+  margin-top: 50px
+  text-align: center
+
+  button
+    border-style: none
+    background: transparent
+    font-size: 50px
+    cursor: pointer
+
+    &:hover
+      text-decoration: underline
+
+.location-item
+  position: relative
+  overflow: hidden
+
+.location-title
+  position: absolute
+  max-width: 344px
+  bottom: 0
+  left: 0
+  padding-bottom: 20px
+  padding-left: 10px
+  width: 90%
+  color: #fff
+  font-family: Montserrat, sans-serif
+  border-bottom-left-radius: 20px
+  border-bottom-right-radius: 20px
+  font-size: 18px
+  font-weight: 500
+  line-height: 26px
+  letter-spacing: 0
+  text-align: left
+  background: linear-gradient(transparent, black)
+
+
+
+
