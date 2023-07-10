@@ -74,11 +74,15 @@ function AboutDropdown() {
 
 const DropdownContainer = styled.div`
   margin: 50px auto auto auto;
-  width: 1023px;
+  width: 71.04%;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const DropdownBox = styled.div`
-  width: 100%;
+  width: 90%;
+  margin: auto
 `;
 
 const UpArrow = styled.span`
@@ -109,6 +113,13 @@ const TitleBox = styled.button`
   &.open .arrow {
     transform: rotate(-180deg);
   }
+  @media screen and (max-width: 480px) { 
+    width: 50% !important
+    height: 30px
+    font-size: 13px;
+    font-style: normal;
+    ligne-height: 142.6%
+  }
 `;
 
 const Menu = styled.ul`
@@ -128,11 +139,15 @@ const Menu = styled.ul`
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  transition: max-height 0.2s ease, opacity 0.5s ease;
 
   &.open {
-    max-height: 200px;
+    max-height: 100%;
+    height: auto;
     opacity: 1;
+  }
+  @media screen and (max-width: 480px) { 
+    height: 100% !important;
   }
 `;
 

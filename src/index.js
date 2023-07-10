@@ -12,7 +12,7 @@ import LocationPage from './components/pages/Location/location';
 ReactDOM.render(
     <React.StrictMode>
         <Router>
-            <Header />
+            <Header className="testo"/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />

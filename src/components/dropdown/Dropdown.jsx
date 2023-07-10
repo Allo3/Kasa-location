@@ -49,13 +49,24 @@ const DropDown = ({ logement }) => {
 
 const DropdownContainer = styled.div`
   margin: 50px auto auto auto;
-  width: 90%;
+  width: 90.07%;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const DropdownBox = styled.div`
-  width: 582px;
+  width: 40.42%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  
 `;
 
 const UpArrow = styled.span`
@@ -64,6 +75,10 @@ const UpArrow = styled.span`
   margin-right: 5px;
   transform-origin: center center;
   transition: transform 0.5s ease;
+  @media screen and (max-width: 480px) { 
+   font-size: 16px;
+   width: 16px;
+  }
 `;
 
 const TitleBox = styled.button`
@@ -86,12 +101,16 @@ const TitleBox = styled.button`
   &.open .arrow {
     transform: rotate(-180deg);
   }
+  @media screen and (max-width: 480px) { 
+   height: 30px; 
+   font-size: 13px;
+   font-style: normal;
+  }
 `;
 
 const Menu = styled.ul`
   margin-top: 0;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 25px;
   padding-left: 20px;
   list-style-type: none;
   background-color: #f6f6f6;
@@ -108,8 +127,8 @@ const Menu = styled.ul`
   transition: max-height 0.5s ease, opacity 0.5s ease;
 
   &.open {
-    max-height: 200px;
-    height: 200px;
+    max-height: 220px;
+    height: 220px;
     opacity: 1;
   }
 `;

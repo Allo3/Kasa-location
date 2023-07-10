@@ -60,10 +60,15 @@ const getLastName = (name) => {
 };
 
 const Container = styled.div`
-  width: 90%;
+  width: 90.07%;
   margin: auto;
   display: flex;
   align-items: center;
+  flex-direction: row;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: start;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -79,6 +84,13 @@ const Title = styled.h1`
   text-align: left;
   color: #FF6060;
   margin-bottom: 0;
+  @media screen and (max-width: 480px) { 
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin-bottom: 10px
+  }
 `;
 
 const Location = styled.p`
@@ -90,6 +102,12 @@ const Location = styled.p`
   text-align: left;
   color: #FF6060;
   margin-top: 0;
+  @media screen and (max-width: 480px) { 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+  }
 `;
 
 const TagList = styled.ul`
@@ -114,12 +132,29 @@ const Tag = styled.li`
   line-height: 25px;
   letter-spacing: 0;
   text-align: center;
+  @media screen and (max-width: 480px) { 
+    width: 84px;
+    height: 18px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%
+  }
 `;
 
 const HostContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media screen and (max-width: 768px) {
+    width: 100%; 
+   flex-direction: row-reverse;
+   justify-content: space-between; 
+   > *:last-child{
+    margin-right: auto;
+    margin-left: 0;
+   }
+  }
 `;
 
 const HostInfo = styled.div`
@@ -132,13 +167,17 @@ const HostImage = styled.img`
   height: 64px;
   border-radius: 50%;
   margin-right: 10px;
+  @media screen and (max-width: 480px) { 
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 const HostName = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 20px;
-  align-items: center;
+  align-items: flex-end;
 `;
 
 const FirstName = styled.h2`
@@ -150,6 +189,12 @@ const FirstName = styled.h2`
   line-height: 26px;
   letter-spacing: 0;
   text-align: left;
+  @media screen and (max-width: 480px) { 
+   font-size: 12px;
+   font-style: normal;
+   line-height: 150%
+
+  }
 `;
 
 const LastName = styled.h2`
@@ -161,6 +206,12 @@ const LastName = styled.h2`
   line-height: 26px;
   letter-spacing: 0;
   text-align: left;
+  @media screen and (max-width: 480px) { 
+   font-size: 12px;
+   font-style: normal;
+   line-height: 150% 
+
+  }
 `;
 
 const RatingContainer = styled.div`
@@ -176,6 +227,9 @@ const Rating = styled.div`
 const StarIcon = styled.span`
   font-size: 24px;
   margin-right: 10px;
+  @media screen and (max-width: 480px) { 
+   font-size: 18px 
+  }
 `;
 
 export default LocationModule;

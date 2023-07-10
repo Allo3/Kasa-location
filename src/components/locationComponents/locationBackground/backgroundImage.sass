@@ -1,11 +1,10 @@
 .carousel-container
-  width: 90%
+  width: 90.07%
   height: 415px
   position: relative
   overflow: hidden
   margin: 45px auto auto auto
   border-radius: 20px
-
 
 .carousel-slide
   display: flex
@@ -14,7 +13,6 @@
   transition: transform 0.3s ease-in-out
   position: relative
   border-radius: 20px
-
 
 .carousel-slide-item
   width: 100%
@@ -33,8 +31,6 @@
   &.active
     opacity: 1
 
-
-
 .carousel-arrow
   position: absolute
   top: 50%
@@ -43,7 +39,7 @@
   cursor: pointer
   transition: opacity 0.3s ease-in-out
   img
-    height: 90px
+    height: 80px
     color: black
     filter: invert(100%)
 
@@ -52,8 +48,6 @@
 
   &.right
     right: 5px
-
-
 
 .carousel-counter
   position: absolute
@@ -67,4 +61,13 @@
   line-height: 26px
   letter-spacing: 0
 
+@media screen and (max-width: 480px)
+  .carousel-container
+    height: 255px
 
+  .carousel-arrow
+    img
+      height: 24px
+  
+  .carousel-counter
+    display: none

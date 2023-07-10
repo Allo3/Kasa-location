@@ -6,7 +6,8 @@ function homepageLogo() {
         <div className="logo-homepage">
             <article className="homepage">
                 <img src={logo} alt="Paysage"/>
-                <h1 className="homepage-text">Chez vous, partout et ailleurs</h1>
+                <h1 id="homepage-heading" className="homepage-text">
+                    Chez vous, partout et ailleurs</h1>
             </article>
         </div>
     )
