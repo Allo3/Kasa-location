@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './backgroundImage.sass'; // Ajoute tes styles personnalisés ici
+import '../Carousel/Carousel.sass'; // Ajoute tes styles personnalisés ici
 import arrowPrev from '../../../assets/arrow-prev.svg';
 import arrowNext from '../../../assets/arrow-next.svg';
 

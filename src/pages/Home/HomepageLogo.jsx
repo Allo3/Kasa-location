@@ -1,4 +1,4 @@
-import logo from "../../../assets/homepage.png";
+import logo from "../../assets/homepage.png";
 import "./index.sass"
 
 function homepageLogo() {

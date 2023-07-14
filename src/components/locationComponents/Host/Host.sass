@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap')
+
+.container
+  width: 90.07%
+  margin: auto
+  display: flex
+  align-items: center
+  flex-direction: row
+  
+
+.location
+  font-family: 'Montserrat', sans-serif
+  font-size: 18px
+  font-weight: 500
+  line-height: 26px
+  letter-spacing: 0
+  text-align: left
+  color: #FF6060
+  margin-top: 0
+  
+
+.tag-list
+  list-style-type: none
+  padding: 0
+  margin: 0
+  display: flex
+  align-items: center
+
+.tag
+  background-color: #FF6060
+  color: #F6F6F6
+  width: 115px
+  height: 25px
+  font-size: 14px
+  margin-right: 10px
+  margin-bottom: 8px
+  border-radius: 10px
+  font-family: 'Montserrat', sans-serif
+  font-weight: 500
+  line-height: 25px
+  letter-spacing: 0
+  text-align: center
+  
+
+.host-container
+  display: flex
+  align-items: center
+  flex-direction: column
+
+  
+.host-info
+  display: flex
+  align-items: center
+
+.host-image
+  width: 64px
+  height: 64px
+  border-radius: 50%
+  margin-right: 10px
+  
+
+.host-name
+  display: flex
+  flex-direction: column
+  margin-right: 20px
+  align-items: flex-end
+
+.first-name
+  font-size: 18px
+  font-weight: 500
+  margin: 0
+  color: #FF6060
+  font-family: 'Montserrat', sans-serif
+  line-height: 26px
+  letter-spacing: 0
+  text-align: left
+  
+
+
+.last-name
+  font-size: 18px
+  font-weight: 500
+  margin: 0
+  color: #FF6060
+  font-family: 'Montserrat', sans-serif
+  line-height: 26px
+  letter-spacing: 0
+  text-align: left
+  
+
+
+.rating-container
+  margin-left: auto
+
+.rating
+  font-size: 14px
+  color: #FF6060
+  margin-top: 8px
+
+.star-icon
+  font-size: 24px
+  margin-right: 10px
+  
+
+
+
+
+.title-container
+  flex: 1
+
+.title
+  font-family: 'Montserrat', sans-serif
+  font-size: 36px
+  font-weight: 500
+  line-height: 51px
+  letter-spacing: 0
+  text-align: left
+  color: #FF6060
+  margin-bottom: 0
+
+
+@media screen and (max-width: 768px)
+    .container
+        flex-direction: column !important
+        align-items: start !important
+
+    .host-container
+        width: 100% !important
+        flex-direction: row-reverse !important
+        justify-content: space-between !important
+
+    .host-info
+        margin: 0 10px !important
+    
+    .rating-container
+        margin: 10px 0 !important
+  
+@media screen and (max-width: 480px)
+    .title
+        font-size: 18px !important
+        font-style: normal !important
+        font-weight: 500 !important
+        line-height: 142.6% !important
+        margin-bottom: 10px !important
+
+    .location
+        font-size: 14px !important
+        font-style: normal !important
+        font-weight: 500 !important
+        line-height: 142.6% !important
+    
+    .tag
+        width: 84px !important
+        height: 18px !important
+        font-size: 10px !important
+        font-style: normal !important
+        font-weight: 500 !important
+        line-height: 180% !important
+
+    .host-image
+        width: 32px !important
+        height: 32px !important
+
+    .first-name
+        font-size: 12px !important
+        font-style: normal !important
+        line-height: 150% !important
+
+    .last-name
+        font-size: 12px !important
+        font-style: normal !important
+        line-height: 150% !important
+
+    .star-icon
+        font-size: 18px !important
