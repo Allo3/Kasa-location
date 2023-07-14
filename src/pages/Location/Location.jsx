@@ -27,7 +27,7 @@ function LocationPage({ logements }) {
       />
       <div className='location-dropdown-container'>
         <Dropdown className='location-dropdown' content={{ title: 'Description', text: logement.description }} />
-        <Dropdown className='location-dropdown' content={{ title: 'Équipements', text: logement.equipments.map(equipment => <li>{equipment}</li>) }} />
+        <Dropdown className='location-dropdown' content={{ title: 'Équipements', text: logement.equipments.map((equipment, index) => <li key={index}>{equipment}</li>) }} />
         </div>
     </div>
   );

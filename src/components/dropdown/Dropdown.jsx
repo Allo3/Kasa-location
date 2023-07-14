@@ -12,7 +12,7 @@ const Dropdown = ({ content, className }) => {
 
   let dropdownContent;
   if (typeof content === 'object' && content.text) {
-    dropdownContent = <li className="menu-item">{content.text}</li>;
+    dropdownContent = <div className="menu-item">{content.text}</div>;
   } else if (Array.isArray(content)) {
     dropdownContent = content.map((option, index) => (
       <li className="menu-item" key={index}>
@@ -21,6 +21,7 @@ const Dropdown = ({ content, className }) => {
       </li>
     ));
   }
+  
 
   return (
     <div className={`dropdown-container ${className}`}>
